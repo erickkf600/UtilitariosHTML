@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+    
+    
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+    
+    <script type="text/javascript">
+	$(function(){
+	
+	
+			$("#menu li a").mouseover(function(){
+				var index = $("#menu li a").index(this);
+				$("#menu li").eq(index).children("ul").slideDown(800);
+		
+				if($(this).siblings('ul').size() > 0){
+					return false;
+				}
+			});
+		
+			$("#menu li").mouseleave(function(){
+				var index = $("#menu li").index(this);
+				$("#menu li").eq(index).children("ul").slideUp();
+			});
+	
+	
+	
+	})
+</script>
+
+
+<style type="text/css">
+        
+		ul,li{padding:0; margin:0; list-style:none;}
+		
+		#menu{padding:5px; width:500px; background:#eaeaea; overflow:hidden; height:26px;}
+		
+		
+		#menu li{float:left; padding:0 10px; width:100px;}
+		
+		#menu li ul{position:absolute; display:none;}
+		
+		#menu li ul li{float:none; background:#9C6}
+				
+		#menu li ul li ul{position:absolute; margin-left:100px; margin-top:-20px;}
+		
+		#menu li ul li ul li{background:#FCC;}
+    
+    </style>
+
+</head>
+<body>
+
+
+ 	<ul id="menu">
+ 		<li><a href="#">Menu 1</a></li>
+ 		<li>
+        	<a href="#">Menu 2</a>
+            <ul>
+            	<li><a href="#">Sub 1</a></li>
+            	<li>
+                	<a href="#">Sub 2</a>
+                    <ul>
+                    	<li><a href="#">Sub Sub 1</a></li>
+                    	<li><a href="#">Sub Sub 2</a></li>
+                    	<li>
+                        	<a href="#">Sub Sub 3</a>
+                            <ul>
+                            	<li><a href="#">Sub Sub Sub 1</a></li>
+                            	<li><a href="#">Sub Sub Sub 2</a></li>
+                            	<li><a href="#">Sub Sub Sub 3</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            	<li><a href="#">Sub 3</a></li>
+            </ul>
+        </li>
+ 		<li><a href="#">Menu 3</a></li>
+ 	</ul>
+	
+</body>
+</html>

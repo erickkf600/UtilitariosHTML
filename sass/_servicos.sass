@@ -1,0 +1,38 @@
+.servicos
+  margin: 40px 5px
+  @extend %text-center
+  h2
+    font:
+      family: $font2
+      size: 30px 
+  p
+    @extend %text-center
+    font:
+      style: italic
+      family: $font2
+      size: 17px  
+.linha-serv  
+  margin: 0 auto
+  @extend %flex-box
+  flex-wrap: wrap
+  justify-content: center
+  margin-top: 30px
+article
+  text-align: center
+  flex: 0 0 25%
+  cursor: pointer
+  margin: 25px
+  @include celular 
+    flex: 0 0 100%
+  h3
+    margin-bottom: 3%
+    font:
+      family: $font2
+      size: 22px 
+  img
+    margin-bottom: 10px 
+  .txt
+    letter-spacing: 1.2px
+    font:
+      family: $font2
+      size: 14px  

@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+</head>
+<style>
+    /*//////////////////////FORM TYPE ONE//////////////////////*/
+    .error{
+      color:red;
+    }
+    .error2{
+      color:green;
+    }
+    .form-type-one{
+        padding: 80px 0px;
+        background-color: #fafbf6;
+        position:relative;
+    }
+    .form-type-one .form-warp{
+        padding-right: 80px;
+        padding-left: 80px;
+    }
+    
+    .form-type-one .form-card{
+        background-color: #fff;
+        border-radius: 20px;
+        padding-top: 15px;
+           -webkit-box-shadow: 2px 22px 63px -17px rgba(24,139,240,0.62);
+        -moz-box-shadow: 2px 22px 63px -17px rgba(24,139,240,0.62);
+        box-shadow: 2px 22px 63px -17px rgba(24,139,240,0.62);
+    }
+    .form-type-one .form{
+            padding-left: 15px;
+            padding-right: 15px;
+    }
+    .form-type-one .form img{
+        text-align: center;
+        margin-left: auto;
+        display: block;
+        margin-right: auto;
+    }
+    .form-type-one .form-control {
+        height: 36px;
+        padding: 6px 6px;
+        font-size: 13px;
+        line-height: 1.428571;
+        color: #476787;
+        background-color: #fff;
+        background-image: none;   
+        border-image-source: linear-gradient(#3c9ef9, #71edf9);
+        border-width: 1pt;
+        border-image-slice: 1;
+    }
+    
+    .form-type-one label {    
+        font-weight: bold;
+        font-size: 13px;
+        font-family: 'Comfortaa';
+        color: #476787;
+    }
+    
+    .form-type-one .form-btn{
+        margin-top: 50px;
+        width: 100%;
+        display: block;
+        font-family: 'Comfortaa';
+        font-weight: bold;
+        font-size: 14px;
+        text-align: center;
+        border-radius: 0px 0px 20px 20px;
+        color: #fff;
+        text-decoration: none;
+        border: solid 0px;
+        padding: 15px 25px;
+        letter-spacing: 2px;
+        background-image: linear-gradient(270deg, #409efb, #6feefb);
+    }
+    .form-type-one h3 {
+    /*    font-weight: bold;*/
+        margin-bottom: 20px;
+        margin-top: 20px;
+        font-family: 'Comfortaa';
+        color: #476787;
+        text-align: center;
+    }
+    .form-type-one p{    
+        margin-bottom: 20px;    
+        font-family: 'Comfortaa';
+        color: #476787;
+        text-align: center;
+    }
+    .art-right{
+        position:absolute;
+        right:0px;
+        bottom: 0px;
+        z-index: 9;
+    }
+    .art-left{
+        position:absolute;
+        left:0px;
+        bottom: 0px;
+         z-index: 9;
+    }
+    @media screen and (max-width: 768px) {
+        .form-type-one .form-warp{
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+    
+    }
+</style>
+
+<body>
+    <section class="form-type-one">
+        <div class="container">
+            <div class="row ">
+                <div class="col-md-6 col-md-offset-3">
+                    <div class="form-warp">
+                        <div class="form-card">
+                            <div class="form">
+                                <div class="form-content">
+                                    <!-- <img class=" text-center" src="images/form-img/Sign-Up.jpg">
+                                    <h3>Sign Up To Create A Quest For Your Business</h3>
+                                    <p>Align and improve performance your team through Objectives and Key Results(OKRs)</p> -->
+                                    <form action="/action_page.php">
+
+                                        <div class="form-group">
+                                            <label for="email">Name:</label>
+                                            <input type="text" name="name" class="form-control my-input" id="name" placeholder="Name">
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="email">Email:</label>
+                                            <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="Zip Code">Zip Code:</label>
+                                            <input type="Zip Code" class="form-control" id="zipCode" name="" placeholder="Zip Code">
+                                        </div>
+
+                                        <div class="form-group" ng-controller="PasswordController" ng-app="myapp">
+                                            <label for="pwd">Password:</label>
+                                            <input class="form-control" id="password" name="password" placeholder="Password" ng-model="password" ng-change="analyze(password)">
+                                            <div ng-style="passwordStrength"></div>
+                                        </div>
+                                        <span class="terms text-left">By clicking "Continue" I agree to Hitgoalz <a href="#"><b>Terms of Service</b></a>. and <a href="#"><b> Privacy Policy</b></a>.</span>
+
+
+                                    </form>
+                                </div>
+                            </div>
+                            <input type="submit" id="btnSubmit" class="form-btn" value="Submit">
+                            <div class="error"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script>
+        //FORM VALIDATION/////////////////////////////////////////////
+           
+        
+        $(document).ready(function(){  
+            
+          $("#btnSubmit").click(function() {
+            $(".error").remove();
+            var name = $("#name").val();
+            var email = $("#email").val();
+            var zipCode = $("#zipCode").val();
+            var zipCodePattern = /^\d{6}$/ ;
+            var password = $("#password").val();
+            var emailReg = /[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}/igm;
+                var strongPassword = new RegExp("^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,})");
+                var mediumPassword = new RegExp("^(((?=.*[a-z])(?=.*[A-Z]))|((?=.*[a-z])(?=.*[0-9]))|((?=.*[A-Z])(?=.*[0-9])))(?=.{6,})");    
+            var emailblockReg =  /^([\w-\.]+@(?!gmail.com)(?!yahoo.com)(?!hotmail.com)([\w-]+\.)+[\w-]{2,4})?$/;
+            var emailIndex = email.indexOf("@");
+            var emailBlock = email.substr(emailIndex);
+            if (name == ""){
+                $("#name").after('<span class="error">Please enter your name.</span>');   
+            }
+            if(email == ""){
+               $("#email").after('<span class="error">Please enter your Email ID</span>'); 
+              
+            }
+            if(email != "" && !emailReg.test(email)){
+               $("#email").after('<span class="error">Please Enter a Valid Email ID</span>'); 
+              
+            }
+            if(email != "" && !emailReg.test(email) && emailBlock == "@gmail.com" || emailBlock == "@yahoo.com" || emailBlock == "@hotmail.com"){
+               $("#email").after('<span class="error">No yahoo, gmail or hotmail emails.</span>'); 
+              
+            }
+            if(zipCode == ""){
+               $("#zipCode").after('<span class="error">Please enter your Zip code</span>'); 
+              
+            } 
+              if(zipCode != "" && !zipCodePattern.test(zipCode)){
+               $("#zipCode").after('<span class="error">Please enter a 6 digit Valid Zip Code</span>'); 
+              
+            }   
+            if(password == ""){
+               $("#password").after('<span class="error">Please enter a Password</span>'); 
+              
+            }
+            if(password != "" && !strongPassword.test(password)){
+               $("#password").after('<span class="error">Please enter a Valid Password  Use a number Uppercase</span>'); 
+              
+            }
+            
+             
+          });
+        
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab|Merriweather')
+//Mixins
+@mixin border-radius($radius) 
+  -webkit-border-radius: $radius
+  -moz-border-radius: $radius
+  -ms-border-radius: $radius
+  border-radius: $radius
+
+@mixin back($escolha)
+  background: $escolha
+  background-attachment: fixed
+  background-repeat: no-repeat
+  background-size: cover
+
+//ANIMAÇÃO
+@mixin animacao($anime) 
+  -webkit-animation: $anime
+  -moz-animation: $anime
+  -ms-animation: $anime
+  animation: $anime
+@mixin keyframe($movimento) 
+  @-webkit-keyframes #{$movimento}
+    @content
+  @-moz-keyframes #{$movimento}
+    @content
+  @-o-keyframes #{$movimento}
+    @content
+
+//Media Queries
+@mixin full-hd
+  @media screen and (min-width:1920px)
+    @content
+
+@mixin tablet
+  @media screen and (max-width:1024px)
+    @content
+
+@mixin celular
+  @media screen and (max-width:610px)
+    @content 
+
+@mixin celular-s
+  @media screen and (max-width:380px)
+    @content 
+
+@mixin celular-xs
+  @media screen and (max-width:320px)
+    @content
+//PlaceHolders
+%p-relative
+  position: relative
+%p-absolute
+  position: absolute
+%width-height
+  height:100%
+  width:100%
+%flex-box
+  display: flex
+  flex-direction: row
+//remove a borda azul ao clicar nos botoes
+%remove-focus
+  &:focus
+    box-shadow: none 
+%text-center
+  text-align: center    
+//Variaveis
+$branco:#fff
+$preto:#000
+$amarelo:#ffc107
+$font1:'Merriweather', serif
+$font2:'Roboto Slab', sans-serif
+
+html, body
+  margin:0
+  padding:0
+  background: linear-gradient(45deg,#fff,#a0a0a0)
+  @extend %width-height
+
+.backtop
+  position: fixed
+  bottom: 20px
+  right: 30px
+  font-size: 20px
+  z-index: 1
+  background:$amarelo
+  color: $preto
+  cursor:pointer
+  padding: 7px 15px
+  @include border-radius(4px)
+  &:hover
+    background: #555
+    color: $branco
+//Modulos    
+@import "header"
+@import "servicos"
+@import "contato"
+@import "portfolio" 
+@import "footer"
+@import "sobre"
+
+
+
+
+

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">
+  <title>PALNOS</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+</head>
+<style>
+  .features_table h1{
+    font-size:25px !important;
+  
+}
+li{
+    list-style: none;
+    }
+h1{
+     font-size:21px !important;
+    }    
+.features-table li {
+    background: #ff871c;
+    border-bottom: 2px solid #e5a253;
+    color: #f1f1f1;
+    font-size: 16px;
+    padding: 15px 24px;
+}
+.features-table li:hover{
+  background:  #e5a253;
+  cursor:pointer;
+  -webkit-transition: all .35s;
+    -moz-transition: all .35s;
+    transition: all .35s;
+}
+.features-table-free li, .features-table-paid li {
+    background: #efefef;
+    border-bottom: 2px solid #d4d4d4;
+  text-align:center;
+  cursor:pointer;
+  padding: 10.5px 24px
+}
+@media only screen and (max-width: 1024px){
+  .features-table-free li, .features-table-paid li{
+    padding: 13.5px 24px
+  } 
+}
+.features-table-free h1, .features-table-paid h1 {
+    text-align: center;
+}
+.features-table-free li:hover, .features-table-paid li:hover {
+    background: #dedede none repeat scroll 0 0;
+  -webkit-transition: all .35s;
+    -moz-transition: all .35s;
+    transition: all .35s;
+}
+.features_table h1 {
+    font-size: 23px !important;
+}
+.features-table h1, .features-table-free h1, .features-table-paid h1 {
+    background: #6b6b6b;
+    color: #fff;
+    font-weight: 600;
+    margin: 0;
+    padding: 19px 21px;
+    text-transform: uppercase;
+}
+.features-table h1 {
+    border-top-left-radius: 20px;
+  text-align:center;
+}
+.features-table-paid h1 {
+    border-top-right-radius: 20px;
+}
+.features-table-free li {
+    border-right: 2px solid #d4d4d4;
+}
+
+.fa.fa-check {
+    color: #2cc14f;
+}
+.fa.fa-times {
+    color: #BA5340;
+}
+.fa{
+  font-size:30px;
+}
+.no-padding{
+  padding:0;
+}
+ul{
+  padding:0;
+}
+
+body {
+  counter-reset: section;                   
+}
+.features-table li::before {
+  counter-increment: section;              
+  content: "" counter(section) ": "; 
+}
+</style>
+<body>
+  <section class="features_table">
+    <div class="container ">
+      <div class="col-md-4 no-padding">
+        <div class="features-table">
+          <ul>
+            <h1>Benefícios</h1>
+            <li>Propagando em nosso site</li>
+            <li>Banner do Projeto</li>
+            <li>Fidelity Card PREMIUM com sua logo</li>
+            <li>Fidelity Card GOLD</li>
+            <li>Formularios para cadastro de clientes</li>
+            <li>Urna para deposito dos cadastros</li>
+            <li>Instagram e Facebook próprio</li>
+            <li>Postagens mensais Facebook e Instagram</li>
+            <li>1000 Cartões de Visita</li>
+            <li>Banner no site da InFoco</li>
+            <li>Propaganda na revista</li>
+
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-2 no-padding">
+        <div class="features-table-free">
+          <ul>
+            <h1>Básico</h1>
+            <li><i class="fa fa-check"></i></li>
+            <li><i class="fa fa-check"></i></li>
+            <li><i class="fa fa-check"></i></li>
+            <li><i class="fa fa-check"></i></li>
+            <li><i class="fa fa-check"></i></li>
+            <li><i class="fa fa-check"></i></li>
+            <li><i class="fa fa-times"></i></li>
+            <li><i class="fa fa-check"></i></li>
+            <li><i class="fa fa-check"></i></li>
+            <li><i class="fa fa-check"></i></li>
+            <li><i class="fa fa-times"></i></li>
+          </ul>
+        </div>
+
+      </div>
+      <div class="col-md-2 no-padding">
+       <div class="features-table-free">
+        <ul>
+          <h1>Medio</h1>
+          <li><i class="fa fa-check"></i></li>
+          <li><i class="fa fa-check"></i></li>
+          <li><i class="fa fa-check"></i></li>
+          <li><i class="fa fa-check"></i></li>
+          <li><i class="fa fa-check"></i></li>
+          <li><i class="fa fa-check"></i></li>
+          <li><i class="fa fa-check"></i></li>
+          <li><i class="fa fa-check"></i></li>
+          <li><i class="fa fa-check"></i></li>
+          <li><i class="fa fa-check"></i></li>
+          <li><i class="fa fa-check"></i></li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-md-2 no-padding">
+       <div class="features-table-free">
+        <ul>
+          <h1>avançado</h1>
+          <li><i class="fa fa-check"></i></li>
+          <li><i class="fa fa-check"></i></li>
+          <li><i class="fa fa-check"></i></li>
+          <li><i class="fa fa-check"></i></li>
+          <li><i class="fa fa-check"></i></li>
+          <li><i class="fa fa-check"></i></li>
+          <li><i class="fa fa-check"></i></li>
+          <li><i class="fa fa-check"></i></li>
+          <li><i class="fa fa-check"></i></li>
+          <li><i class="fa fa-check"></i></li>
+          <li><i class="fa fa-check"></i></li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-md-2 no-padding">
+       <div class="features-table-paid">
+        <ul>
+          <h1>super</h1>
+          <li><i class="fa fa-check"></i></li>
+          <li><i class="fa fa-check"></i></li>
+          <li><i class="fa fa-check"></i></li>
+          <li><i class="fa fa-check"></i></li>
+          <li><i class="fa fa-check"></i></li>
+          <li><i class="fa fa-check"></i></li>
+          <li><i class="fa fa-check"></i></li>
+          <li><i class="fa fa-check"></i></li>
+          <li><i class="fa fa-check"></i></li>
+          <li><i class="fa fa-check"></i></li>
+          <li><i class="fa fa-check"></i></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+</section>
+</body>   
+</html>  
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+
+  <title>Hello, world!</title>
+</head>
+<style>
+@import url(https://fonts.googleapis.com/css?family=Roboto:400);
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.header {
+  max-width: 720px;
+  margin: 2em auto 10em;
+}
+
+.header-nav {
+  position: relative;
+  padding-right: 3em;
+}
+.header-nav:before, .header-nav:after {
+  content: '';
+  display: table;
+}
+.header-nav:after {
+  clear: both;
+}
+
+.menu {
+  display: inline-block;
+  float: right;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.menu li {
+  display: inline-block;
+}
+.menu li a {
+  color: #0097bf;
+  display: block;
+  padding: 10px;
+  position: relative;
+  transition: color .3s;
+  text-decoration: none;
+}
+
+.search-button {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+}
+
+.search-toggle::before {
+  font-family: "Font Awesome 5 Free"; 
+  font-weight: 900; 
+  content: '\f002';
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  left: -2px;
+  top: -2px;
+}
+.search-toggle.active::before {
+  width: 0;
+  border-width: 1px;
+  border-radius: 0;
+  font-family: "Font Awesome 5 Free"; 
+  font-weight: 900; 
+  content: '\f00d';
+}
+
+.search-input:focus {
+  outline: none;
+}
+/**************************************MENU 1***************************************************/
+#header-1 {
+  border-bottom: 2px solid #0097bf;
+}
+#header-1 .search-box {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  max-height: 0;
+  -webkit-transform: translateY(100%);
+  transform: translateY(100%);
+  transition: all 0.3s;
+  background-color: #0097bf;
+}
+#header-1 .search-box .search-input {
+  width: 100%;
+  height: 100%;
+  padding: 0 1em;
+  border: 0;
+  background-color: transparent;
+  opacity: 0;
+  color: #fff;
+}
+#header-1 .search-box .search-input::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.4);
+}
+#header-1.show .search-box {
+  max-height: 40px;
+}
+#header-1.show .search-box .search-input {
+  opacity: 1;
+}
+/********************************MENU2*******************************************/
+#header-2 {
+  overflow: hidden;
+}
+#header-2 .menu li {
+  opacity: 1;
+  transition: opacity 0.2s 0.1s, -webkit-transform 0.3s;
+  transition: transform 0.3s, opacity 0.2s 0.1s;
+  transition: transform 0.3s, opacity 0.2s 0.1s, -webkit-transform 0.3s;
+}
+#header-2 .menu li:nth-child(1) {
+  transition-delay: 0.4s;
+}
+#header-2 .menu li:nth-child(2) {
+  transition-delay: 0.5s;
+}
+#header-2 .menu li:nth-child(3) {
+  transition-delay: 0.6s;
+}
+#header-2 .menu li:nth-child(4) {
+  transition-delay: 0.7s;
+}
+#header-2 .menu li:nth-child(5) {
+  transition-delay: 0.8s;
+}
+#header-2 .search-box {
+  position: absolute;
+  left: 0;
+  height: 100%;
+  padding-left: 2em;
+  -webkit-transform: translateX(20%);
+  transform: translateX(20%);
+  opacity: 0;
+  transition: all 0.4s 0.3s;
+}
+#header-2 .search-box .search-input {
+  border: 0;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+}
+#header-2 .search-box .search-toggle {
+  width: 14px;
+  height: 14px;
+  padding: 0;
+  position: absolute;
+  left: 5px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+#header-2.show .menu li {
+  -webkit-transform: scale(0.8);
+  transform: scale(0.8);
+  opacity: 0;
+}
+#header-2.show .search-box {
+  width: calc(100% - 5em);
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+  opacity: 1;
+}
+
+/****************************MENU 3***********************************/
+#header-3 .menu li {
+  opacity: 1;
+  transition: all 0.3s 0.3s;
+}
+#header-3 .search-box {
+  position: absolute;
+  right: 48px;
+  height: 100%;
+  width: 0;
+  padding: 0;
+  opacity: 0;
+  transition: all 0.3s;
+}
+#header-3 .search-box .search-input {
+  border: 0;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+}
+#header-3 .search-box .search-toggle {
+  width: 14px;
+  height: 14px;
+  padding: 0;
+  position: absolute;
+  left: 5px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+#header-3.show .menu li {
+  opacity: 0;
+  transition: all 0.3s;
+}
+#header-3.show .menu li:nth-child(even) {
+  -webkit-transform: translateY(-100%);
+  transform: translateY(-100%);
+}
+#header-3.show .menu li:nth-child(odd) {
+  -webkit-transform: translateY(100%);
+  transform: translateY(100%);
+}
+#header-3.show .search-box {
+  width: calc(100% - 5em);
+  opacity: 1;
+  transition: all 0.3s 0.3s;
+}
+
+
+
+
+</style>
+<body>
+  <header id="header-1" class="header">
+    <nav class="header-nav">
+      <div class="search-button">
+        <a href="#" class="search-toggle" data-selector="#header-1"></a>
+      </div>
+      <ul class="menu">
+        <li><a href="#">For Business</a></li>
+        <li><a href="#">For Personal</a></li>
+        <li><a href="#">Pricing</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <form action="" class="search-box">
+        <input type="text" class="text search-input" placeholder="Digite Aqui para Pesquisar..." />
+      </form>
+    </nav>
+  </header>
+
+  <header id="header-2" class="header">
+    <nav class="header-nav">
+      <div class="search-button">
+        <a href="#" class="search-toggle" data-selector="#header-2"></a>
+      </div>
+      <ul class="menu">
+        <li><a href="#">For Business</a></li>
+        <li><a href="#">For Personal</a></li>
+        <li><a href="#">Pricing</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <form action="" class="search-box">
+        <input type="text" class="text search-input" placeholder="Digite Aqui para Pesquisar..." />
+      </form>
+    </nav>
+  </header>
+
+  <header id="header-3" class="header">
+    <nav class="header-nav">
+      <div class="search-button">
+        <a href="#" class="search-toggle" data-selector="#header-3"></a>
+      </div>
+      <ul class="menu">
+        <li><a href="#">For Business</a></li>
+        <li><a href="#">For Personal</a></li>
+        <li><a href="#">Pricing</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <form action="" class="search-box">
+        <input type="text" class="text search-input" placeholder="Digite Aqui para Pesquisar..." />
+      </form>
+    </nav>
+  </header>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+  <script>
+    $('.header').on('click', '.search-toggle', function(e) {
+      var selector = $(this).data('selector');
+
+      $(selector).toggleClass('show').find('.search-input').focus();
+      $(this).toggleClass('active');
+
+      e.preventDefault();
+    });
+  </script>
+</body>
+</html>

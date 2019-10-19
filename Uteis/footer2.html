@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
+  <title>Hello, world!</title>
+</head>
+<style>
+
+.sec-footer{
+  background: #433d7b;
+  text-align: center;
+  color: #fff;
+  padding-top: 2.5rem;
+  padding-bottom: 2rem;
+}
+.sec-footer .desc-box{
+  background: transparent;
+  border: 0;
+}
+.sec-footer .desc-box .card-title::after{
+  content: ' ';
+  background: #ffffff;
+  display: block;
+  width: 95%;
+  height: 0.2rem;
+  margin-top:0.3rem;
+}
+.sec-footer .desc-box .card-text{
+  font-family:iranyekan_light;
+  text-align: justify;
+}
+.sec-sub-footer{
+  background: #f2f2f4;
+  color: #000;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-size:19px;
+}
+
+/*------------------*/
+.social {
+  position: relative;
+  font-size: 20px;
+  color: #e6e6e6;
+  width: 45px;
+  margin: 4px;
+  height: 45px;
+  line-height: 45px;
+  display: inline-block;
+  text-align: center;
+  -webkit-perspective: 50em;
+  perspective: 50em;
+  text-decoration: none;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.social:after {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border: 2px solid #e6e6e6;
+  content: '';
+  z-index: -1;
+  border-radius: 50%;
+}
+.social:before,
+.social:after {
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+.social:hover,
+.social:active,
+.social.hover {
+  color: #c0392b;
+}
+.social:hover:after,
+.social:active:after,
+.social.hover:after {
+  border-color: #c0392b transparent #c0392b transparent;
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+</style>
+<body>
+
+  <div class="container-fluid sec-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="card desc-box">
+            <div class="card-body">
+              <div class="card-title">Mapa do Site</div>
+              <div class="card-text">
+                <div class="row">
+                  <div class="col-md-6">
+                    <ul>
+                      <li><a href="#demo" id="foot">Home</a></li>
+                      <li><a href="#proj" id="foot">Portifólio</a></li>
+                      <li><a href="#sobre" id="foot">Sobre Nós</a></li>
+                      <li><a href="#colaboradores" id="foot">Colaboradores</a></li>
+                    </ul>
+                  </div>
+
+                  <div class="col-md-6">
+                    <ul>
+                      <li><a href="#" id="foot">Vagas</a></li>
+                      <li><a href="#" id="foot">Contato</a></li>
+                      <li><a href="#" data-toggle="modal" data-target="#modalLRFormDemo" id="foot">Login</a></li>
+                    </ul>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div><!--.card-->
+        </div><!--.col-->
+        <div class="col text-center mt-5">
+          <a href="https://facebook.com/" target="blank" class="social"><i class="fab fa-facebook-f fa-lg"></i></a>
+          <a href="https://twitter.com/" target="blank" class="social"><i class="fab fa-twitter fa-lg"></i></a>
+          <a href="https://github.com/" target="blank" class="social"><i class="fab fa-github-alt fa-lg"></i></a>
+          <a href="https://br.linkedin.com/" target="blank" class="social"><i class="fab fa-linkedin-in"></i></a>
+        </div><!--.col-->
+        <div class="col">
+          <div class="card desc-box">
+            <div class="card-body">
+              <div class="card-title">Informações de contato </div>
+              <div class="card-text">
+                <div class="row">
+                  <div class="col">
+                    <i class="fas fa-phone ml-3"></i>
+                    <span>(888) 888 8888</span>
+                  </div><!--.col-->
+                </div><!--.row-->
+                <div class="row">
+                  <div class="col">
+                    <i class="fas fa-map-marker ml-3"></i>
+                    <span>514 S. Magnolia St. Orlando, FL 32806</span>
+                  </div><!--.col-->
+                </div><!--.row-->
+                <div class="row">
+                  <div class="col">
+                    <i class="fas fa-envelope-open ml-3"></i>
+                    <span>contato@tape.com</span>
+                  </div><!--.col-->
+                </div><!--.row-->
+              </div><!--.card-text-->
+            </div>
+          </div><!--.card-->
+        </div><!--.col-->
+        
+      </div><!--.row-->
+    </div>
+  </div>
+  <div class="container-fluid sec-sub-footer">
+    <div class="container">
+     <p class="text-center">Copyright © TAPE - 2018.</p>
+   </div>
+ </div>
+
+ <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+ <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+ <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="css/paginas.css">
+
+<h1>Pure CSS Gallery</h1>
+<section class="gallery">
+    <div class="carousel">
+        <input type="radio" id="image1" name="gallery-control" checked>
+        <input type="radio" id="image2" name="gallery-control">
+        <input type="radio" id="image3" name="gallery-control">
+        <input type="radio" id="image4" name="gallery-control">
+        <input type="radio" id="image5" name="gallery-control">
+        <input type="checkbox" id="fullscreen" name="gallery-fullscreen-control">
+        <div class="wrap">
+            <figure>
+                <label for="fullscreen">
+                    <img src="img/produtos/530.jpg" alt="image1">
+                </label>
+            </figure>
+            <figure>
+                <label for="fullscreen">
+                    <img src="img/produtos/531.jpg" alt="image2">
+                </label>
+            </figure>
+            <figure>
+                <label for="fullscreen">
+                    <img src="img/produtos/532.jpg" alt="image3">
+                </label>
+            </figure>
+            <figure>
+                <label for="fullscreen">
+                    <img src="img/produtos/533.jpg" alt="image4">
+                </label>
+            </figure>
+
+            <figure>
+                <label for="fullscreen">
+                    <img src="img/produtos/534.jpg" alt="image5">
+                </label>
+            </figure>
+        </div>
+        <div class="thumbnails">
+            <div class="slider">
+                <div class="indicator"></div>
+            </div>
+            <label for="image1" class="thumb" style="background-image: url(img/produtos/530.jpg)"></label>
+            <label for="image2" class="thumb" style="background-image: url(img/produtos/531.jpg)"></label>
+            <label for="image3" class="thumb" style="background-image: url(img/produtos/532.jpg)"></label>
+            <label for="image4" class="thumb" style="background-image: url(img/produtos/533.jpg)"></label>
+            <label for="image5" class="thumb" style="background-image: url(img/produtos/534.jpg)"></label>
+        </div>
+    </div>
+</section>

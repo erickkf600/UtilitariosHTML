@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+</head>
+<style>
+.header {
+  background: #354545;
+  position: relative;
+}
+.header nav{
+  padding: .4rem .8rem;
+}
+.header ul{
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  margin: 5px 0 5px 0;
+}
+.header ul li{
+  color: #fff;
+}
+.header ul li a{
+  color: #fff;
+}
+.header .dropdown-menu {
+  margin-right: 30px;
+  width: 100%;
+}
+.header .dropdown-menu .dropdown-item{
+  color: #000;
+}
+/***    left menu ****/
+
+.side {
+  width: 220px;
+  background: #000;
+  transition: all 0.5s ease-in-out;
+  position: fixed;
+  height: 100%;
+}
+.side ul{
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+.side ul li a{
+  display: block;
+  padding: 8px 12px;
+  color: #fff;
+  border-left: 0px solid #dedede;
+  text-decoration: none;
+  border-bottom: 1px solid #222;
+  transition: .3s;
+}
+.side ul li a:hover{
+  background: #253238;
+}
+.side ul li a i{
+  margin-right: 20px;
+}
+
+.collapsed i{
+  line-height: 30px
+}
+.sub-menu{
+  background: #222;
+}
+
+.sidebar-footer {
+  position: absolute;
+  width: 100%;
+  bottom: 48px;
+  left: 0;
+  border-top: 1px solid #222;
+  box-shadow: 0px -2px 5px 0px rgba(87,85,87,1);
+}
+.sidebar-footer button {
+  width: 100%;
+  background: #2B2B2B;
+  border: none;
+  color: #fff;
+  line-height: 35px;
+  transition: .3s;
+  font-size: 17px;
+}
+.sidebar-footer button:focus, .sidebar-footer button:hover{
+  outline: none;
+  background: #253238;
+  
+}
+.sidebar-footer button span i{
+  line-height: 35px;
+  float: right; 
+}
+.min-sidenav .sidebar-footer button span{
+  display: none;
+  line-height: 35px
+}
+
+.min-sidenav .sidebar-footer button:before{
+  content: "\f054";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 600;
+  font-size: 17px;
+}
+.side.min-sidenav{
+  width: 42px;
+  transition: all 0.5s ease-in-out;
+}
+.side.min-sidenav li span{
+  display: none;
+  transition: all 0.5s ease-in-out
+}
+</style>
+<body>
+
+  <header class="header">
+    <nav>
+      <ul>
+        <li>LOGO</li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" href="http://example.com" id="menu" data-toggle="dropdown">
+            <span>Nome Usuario</span>
+          </a>
+          <div class="dropdown-menu" aria-labelledby="menu">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something</a>
+          </div>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <aside class="sidemenu">
+    <div class="side">
+      <ul>
+        <li> 
+          <a href="#" data-toggle="collapse" data-target="#dashboard" class="collapsed"><i class="fa fa-th-large"></i><span>Colapse<i class="fa fa-chevron-left float-right"></i></span></a>
+          <ul class="sub-menu collapse" id="dashboard">
+            <li><a href="#">Item 1</a></li>
+            <li><a href="#">Item 2</a></li>
+            <li><a href="#">Item 3</a></li>
+            <li><a href="#">Item 4</a></li>
+            <li><a href="#">Item 5</a></li>
+          </ul>
+        </li>
+        <li><a href="">
+          <i class="fa fa-shopping-cart text-green"></i><span>Produtos</span></a>
+        </li>
+        <li>
+          <a href="">
+          <i class="fa fa-shopping-cart text-green"></i><span>Listas</span></a>
+        </li>
+        <li><a href="">
+          <i class="fa fa-shopping-cart text-green"></i><span>Cadastatros</span></a>
+        </li>
+        <li><a href="">
+          <i class="fa fa-shopping-cart text-green"></i><span>Administradores</span></a>
+        </li>
+        <li><a href="">
+          <i class="fa fa-shopping-cart text-green"></i><span>Paginas</span></a>
+        </li>
+        <li><a href="">
+          <i class="fa fa-shopping-cart text-green"></i><span>Imagens</span></a>
+        </li>
+      </ul>
+      <div class="sidebar-footer">
+        <button class="minimizar"><span>Minimizar<i class="fas fa-chevron-left"></i></span></button>
+      </div>
+    </div>
+  </aside>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('.minimizar').click(function(){
+      $('.side').toggleClass('min-sidenav');
+   });  
+});
+  </script>
+</body>
+</html>

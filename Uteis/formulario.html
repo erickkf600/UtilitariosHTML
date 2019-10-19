@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<title>Fale conosco</title>
+
+</head>
+<body>
+<h1 style="text-align:center;">Fale Conosco</h1>
+<form>
+    
+    <fieldset >
+		<legend>Seus Dados</legend><!--dados pessoais do usuario--><br>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome"/><br><br>
+    <div>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"/><br><br>
+    </div>
+    <div>
+    	<label for="telefone">Telefone:</label>
+    	<input type="text" id="tel" name="telefone"/>
+    	&emsp;&emsp;&emsp;<label for="nascimento">Nascimento:</label>
+    	<input type="date" id="nasc" name="nascimento"/>
+    </div>
+    
+    
+    <div><br>
+    	<label for="sexo">Sexo</label><br>
+    	<input type="radio" name="sexo" value="masculino"/>Maculino<br><br>
+    	<input type="radio" name="sexo" value="feminino"/>Feminino
+    </div>
+    
+    <div><br>
+    
+    	<label for="interesses pessoais">Interesses Pessoais</label><br><br>
+    	&emsp;<input type="checkbox" name="politica" value="politica"/>Política&emsp; 
+    	&emsp;<input type="checkbox" name="ciencia" value="ciencia"/>Ciência&emsp;
+    	&emsp;<input type="checkbox" name="urbanismo" value="urbanoismo"/>Urbanismo<br><br>&emsp;
+    	<input type="checkbox" name="futebol" value="futebol"/>Futebol&emsp;
+    	<input type="checkbox" name="tecnologia" value="tecnoligia"/>Tecnologia&emsp;
+    	<input type="checkbox" name="design de interiores" value="design de interiores"/>Design de Interiores<br><br>&emsp;
+    	<input type="checkbox" name="politica" value="politica"/>Política&emsp;
+    	<input type="checkbox" name="sociedade" value="sociedade"/>Sociedade&emsp;
+    	&nbsp;&nbsp;<input type="checkbox" name="moda" value="moda"/>Moda<br><br>&emsp;
+    	<input type="checkbox" name="religiao" value="religiao"/>Religião&emsp;
+    	<input type="checkbox" name="gastronomia" value="gastronomia"/>Gastronomia&emsp;
+    	<input type="checkbox" name="beleza e bem estar" value="beleza e bem estar"/>Beleza e Bem Estar&emsp;
+    </div>
+    
+    </fieldset><br>
+   
+     <fieldset>
+    <legend>Dados do Contato</legend><br>
+  <span>Tipo de Contato:</span>&nbsp;
+    <select>
+ 		<label for="tipo de conato">Tipo de Conato</label>   
+    	<option value="sugestao">Sugestão</option>
+    	<option value="reclamacao">Reclamação</option>
+    	<option value="elogio">Elogio</option>
+    	<option value="duvidas">Duvidas</option>
+    </select><br><br><br><br><br>
+    <div >
+        <label for="text">Texto do Contato</label><br><br>
+        <textarea id="text" name="texto" rows="10" cols="80" spellcheck></textarea>
+    </div>
+    </fieldset>
+    
+    <div class="button" style="text-align:center;"><br>
+		<button type="reset">Limpar</button>
+	 	<button type="submit">Enviar</button>
+	</div>	
+
+</form>
+</body>
+</html>

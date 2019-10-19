@@ -1,0 +1,155 @@
+@charset "utf-8";
+/* Primeiro site */
+
+@font-face{
+	font-family:minhafonte;
+	scr:url("../font/MidsnightBangkok.ttf");
+	
+}
+
+body{
+	font-family: 'Arial Narrow', sans-serif;
+	background-color:darkgray;
+	
+}
+
+h3{
+	
+	font-family: Lucida Grande;
+	text-shadow: 5px 5px 15px black;
+	transition: font-size 2s;
+}
+
+h3:hover{
+	font-size: 36px;
+}
+
+aside{
+	
+	font-family: 'Prata', serif;
+	font-size: 18px;
+	text-indent: 25px;
+	text-align: justify;	
+}
+
+aside::selection{
+	background-color: red;
+	
+}
+
+header#topo{
+	
+	border: 3px solid #463120;
+	margin-top:15px;
+	margin-left: 20;
+/*	background: blue;    Para navegadores que não suportam gradiente */
+	/*background:-o-linear-gradient(blue,red);  /*Para safari 5.1 a 6.0 */
+	/*background: -moz-linear-gradient(blue,red);  /*Para Fire Fox 3.6 a 15 */
+	/*background:linear-gradient(to left, blue,red);	 /*Sintaxe Padrão*/
+	 	
+		
+		
+	
+}
+nav#vertical ul{
+	
+	height: 38px;
+	
+}
+nav#vertical ul li{
+	border: 1px solid #464646;
+	float: left;
+	list-style: none;
+	width: calc(100%/11);
+	height: inherit;
+	text-align: center; /*alinhar texto*/
+	padding-top: 0.1%;
+	background-color:gray;
+	border-radius: 1px 30px 30px 30px; 	
+		
+		
+}
+nav#vertical ul li:hover{  /* Mudar de cor ao passar o mouse */
+	background-color: dimgray;
+	border:solid 1px #FF0004
+	
+	
+}
+nav#vertical ul li a{
+	color: black;  /* Cor da fonte do menu */
+	display: block;     /* Toda a area clicavel */
+	height: inherit;
+	text-decoration: none;
+}
+
+nav#vertical ul li a:hover{ 
+	color:snow; /* nova cor da fonte ao passar o mouse */
+	
+}
+		
+main{
+	border: 3px solid #464646;
+	
+} 
+
+article img:hover{
+	box-shadow: 5px 5px 10px red;
+	
+}
+
+.imagemDestaques{  
+	width: 200px;
+	height: 250px;
+	transition: border-radius 2s;
+	
+}
+
+.imagemDestaques:hover{
+	border-radius:150px;
+	
+}
+
+.materia{
+	width: 30%;
+	float: left;
+	
+	
+}
+main{
+	border: solid 1px #6E6E6E;
+	min-height: 1000px;
+	overflow: scroll;
+	
+	
+}
+
+.titulo{
+	text-decoration: none;
+	color: black
+	
+}
+/*Mudar a cor de acordo com o tamanho da tela */
+
+@media screen and (max-width: 480px) {
+	nav#vertical ul {
+		padding-left: 0; 
+	
+}
+	nav#vertical ul li{
+		
+	width: 100%;
+	border-radius: 0px;	
+		
+}
+	/*body{
+		background-color: darkgoldenrod;
+	}*/
+	
+}	
+	
+@media screen and (min-width: 481px) {
+ /*	body{
+		background-color: aquamarine
+	}	*/
+	
+}

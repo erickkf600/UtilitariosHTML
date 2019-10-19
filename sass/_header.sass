@@ -1,0 +1,63 @@
+.header 
+  @extend %width-height
+  @include back(url(../img/banner.png) 50% 50%)
+#logo
+  width: 15%
+  @include tablet 
+    width: 25% 
+
+.text
+  @extend %p-absolute
+  left:20vh
+  top:45vh
+  margin:0 15px 
+  @include tablet 
+    left:0
+  h1
+    color:$amarelo
+    text-shadow:0 1px 1px $preto
+    @include celular 
+      font-size:25px
+    font:
+      family:$font1
+      size:35px
+  p
+    color: $branco
+    @include full-hd
+      max-width:50rem
+    @include celular-s 
+      font-size:15px
+    font:
+      family:$font1
+      size:20px
+    text:
+      align:justify
+      shadow:0 5px 10px $preto    
+hr 
+  height:2px
+  border: none
+  color: $branco
+  background-color: $branco
+  text-shadow: 0 1px 1px #000 
+#saiba-mais
+  @extend %p-absolute
+  bottom:0
+  left:0
+  right:0
+  display: block
+  margin: 0 auto 
+  color: $branco
+  font:
+    family: $font1
+    size: 3rem
+  @extend %remove-focus
+.demo-arrow 
+  @extend %p-relative
+  @include animacao( demo-arrow 0.5s ease-in-out infinite alternate) 
+
+@include keyframe( demo-arrow )
+  0%
+    top:0
+  100%
+    top:10px
+

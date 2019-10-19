@@ -1,0 +1,39 @@
+
+Configuração inicial :
+
+ssh-keygen -t rsa -b 4096 -C "erickkf600@gmail.com"
+
+ssh-agent -s
+
+ssh-add ~/.ssh/id_rsa  
+
+clip < ~/.ssh/id_rsa.pub (Colar no github)
+
+ssh -T git@github.com  
+
+
+
+Enviar para um novo repositorio
+
+echo "# Escreva qualquer coisa" >> README.md
+git init
+git status
+git add *
+git status (para conferir se todos estão verdes)
+git add README.md
+git commit -m "first commit"
+git push -u origin master
+
+
+Enviar para um repositorio existente (clone primeiro)
+*git clone git@github.com:erickkf600/nome do repositorio*
+
+git add *
+git commit -m "first commit"
+git push -u origin master
+
+
+
+
+
+

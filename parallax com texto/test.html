@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <title>Hello, world!</title>
+</head>
+<style>
+body{margin: 0}
+.textoimg {
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    width: 34%;
+    left: 33%;
+        /*
+        50-(17) = 33
+        34 + 33 = 67
+        */
+    background-color: #111;
+    color: #fff;
+    padding: .7em;
+    font-size: 2em;
+    letter-spacing: .3em;
+    opacity: .9;
+}
+.parallax01 {
+    /* The image used */
+    background-image: url("1.jpg");
+}
+.parallax02 {
+    /* The image used */
+    background-image: url("2.jpg");
+}
+.parallax03 {
+    /* The image used */
+    background-image: url("3.jpg");
+}
+
+.parallax01, .parallax02, .parallax03 {
+    height: 100vh;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.texto {
+    background-color: #000;
+    color: #fff;
+    font-size: 2em;
+    text-align: center;
+    padding: 1em;
+}
+.texto2 {
+    background-color: tomato;
+    font-size: 2em;
+    text-align: center;
+    padding: 1.5em;
+}
+body {
+    height: 250vh;
+}
+body h1 {
+    font-size: 2em;
+    padding: 1em;
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+    height: 10vh;
+}
+
+</style>
+<body>
+
+    <div class="card-body text-center">
+      <h1>Exemplo 03 de parallax</h1>
+        <div class="parallax01">
+            <div class="container-fluid col-md-11 col-sm-10" id="promo">
+      <h2>Promoções</h2>
+      <hr class="bg-dark">
+
+      <div class="container bg-dark mt-4">
+        <div class="row">
+
+          <div class="col-lg-4 col-md-12 mb-4">
+            <div class="card" style="background: #000">
+              <div class="view overlay hm-white-slight">
+                <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/6-col/img (136).jpg" class="img-fluid" alt="Card image cap">
+                <a href="#!">
+                  <div class="mask"></div>
+                </a>
+              </div>
+
+              <div class="card-body text-center">
+                <h4 class="card-title text-light py-3">Amazing wild horses</h4>
+                <p class="card-text text-light">Sed ut perspiciatis unde omnis iste natus error volosit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab eum illo inventore veritatis quasi architecto beatae vitae dicta explicabo.</p>
+                <a href="#" class="btn btn-light my-3">Agendar uma consulta</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-12 mb-4">
+            <div class="card" style="background: #000">
+              <div class="view overlay hm-white-slight">
+                <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/6-col/img (136).jpg" class="img-fluid" alt="Card image cap">
+                <a href="#!">
+                  <div class="mask"></div>
+                </a>
+              </div>
+
+              <div class="card-body text-center">
+                <h4 class="card-title text-light py-3">Amazing wild horses</h4>
+                <p class="card-text text-light">Sed ut perspiciatis unde omnis iste natus error volosit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab eum illo inventore veritatis quasi architecto beatae vitae dicta explicabo.</p>
+                <a href="#" class="btn btn-light my-3">Agendar uma consulta</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-12 mb-4">
+            <div class="card" style="background: #000">
+              <div class="view overlay hm-white-slight">
+                <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/6-col/img (136).jpg" class="img-fluid" alt="Card image cap">
+                <a href="#!">
+                  <div class="mask"></div>
+                </a>
+              </div>
+
+              <div class="card-body text-center">
+                <h4 class="card-title text-light py-3">Amazing wild horses</h4>
+                <p class="card-text text-light">Sed ut perspiciatis unde omnis iste natus error volosit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab eum illo inventore veritatis quasi architecto beatae vitae dicta explicabo.</p>
+                <a href="#" class="btn btn-light my-3">Agendar uma consulta</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      
+    </div>        
+        </div>
+        <section>
+            <div class="texto">
+                <p>Na primeira dica nós adicionamos uma imagem e fizemos o texto passar por cima desta image, esta imagem sendo "fixa".</p>
+            </div>
+        </section>
+        <div class="parallax02">
+            <p class="textoimg">Textos nas imagens</p>
+        </div>
+        <section>
+            <div class="texto">
+                <p>Na segunda dica nós utilizamos mais de uma imagem como background, algo que nós vimos que é só posicionar uma classe no lugar certo.</p>
+            </div>
+        </section>
+        <div class="parallax03">
+            <p class="textoimg">Textos nas imagens</p>        
+        </div>
+        <section>
+            <div class="texto">
+                <p>E na terceira adicionamos texto nas imagens, ainda sem nenhum efeito no texto.</p>
+            </div>
+        </section>
+
+  <!--MDB Cards-->
+
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.4.1/js/mdb.min.js"></script>
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+
+</html>

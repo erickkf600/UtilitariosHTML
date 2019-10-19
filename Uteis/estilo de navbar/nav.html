@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="estilo.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+<div id="flipkart-navbar">
+    <div class="container">
+        <div class="row row1">
+            <ul class="largenav pull-right">
+                <li class="upper-links"><a class="links" href="http://clashhacks.in/">Link 1</a></li>
+                <li class="upper-links"><a class="links" href="https://campusbox.org/">Link 2</a></li>
+                <li class="upper-links"><a class="links" href="http://clashhacks.in/">Link 3</a></li>
+                <li class="upper-links"><a class="links" href="http://clashhacks.in/">Link 4</a></li>
+                <li class="upper-links"><a class="links" href="http://clashhacks.in/">Link 5</a></li>
+            </ul>
+        </div>
+        <div class="row row2">
+            <div class="col-sm-2">
+                <h2 style="margin:0px;"><span class="smallnav menu" onclick="openNav()">☰ Brand</span></h2>
+                <img src="logo.png" class="img-fluid">
+            </div>
+        </div>
+    </div>
+</div>
+<div id="mySidenav" class="sidenav">
+    <div class="container" style="background-color: #2874f0; padding-top: 10px;">
+        <span class="sidenav-heading">Home</span>
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+    </div>
+    <a href="http://clashhacks.in/">Link</a>
+    <a href="http://clashhacks.in/">Link</a>
+    <a href="http://clashhacks.in/">Link</a>
+    <a href="http://clashhacks.in/">Link</a>
+</div>
+
+<script>
+    function openNav() {
+    document.getElementById("mySidenav").style.width = "70%";
+    // document.getElementById("flipkart-navbar").style.width = "50%";
+    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.body.style.backgroundColor = "rgba(0,0,0,0)";
+}
+</script>
+
+</body>
+</html>
